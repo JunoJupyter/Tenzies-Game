@@ -1,12 +1,40 @@
-# React + Vite
+# 🎲 Tenzies Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun dice game built with React where the goal is to roll and "fix" matching dice until all dice show the same number. Includes animated dice rolls for a smooth visual experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📜 Game Rules
 
-## Expanding the ESLint configuration
+- The game starts with **10 dice**, each showing a random number between 1 and 9.
+- You can **click on a die** to **freeze its current value**.
+- Press the **"Roll"** button to **re-roll all unfixed dice**.
+- Your goal is to **fix all dice** to the **same number**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🕹️ How to Play
+
+1. Click the **Roll** button to start.
+2. Click on any **die** to freeze its value (highlighted).
+3. Press **Roll** again to update only the unfixed dice.
+4. Repeat until all dice are fixed and show the **same number** — you win!
+
+---
+
+## ✨ Features
+
+- 🎲 **10 Dice** with values from **1 to 9**
+- 🖱️ **Click-to-freeze** dice (toggleable)
+- 🎞️ **Rolling animation**: Dice animate on each roll, even if their value stays the same
+- ⚛️ **Built with React**: Uses component-based architecture and React hooks
+- 💅 **Smooth UI** with CSS animations and transitions
+- ✅ Fully responsive and interactive
+
+---
+
+## 🚀 Tech Stack
+
+- **React**
+- **CSS3** for animations and styling
+- **Vite** or Create React App
