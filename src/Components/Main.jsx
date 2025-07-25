@@ -5,10 +5,8 @@ import Confetti from "react-confetti";
 const uid = new ShortUniqueId({ length: 5 });
 
 function Main() {
-  // const [arr, setArr] = useState(generateRandomNumbers());
   const [rollCount, setRollCount] = useState(0);
   const [dieInfo, setDieInfo] = useState(() => generateRandomNumbers());
-  // generateRandomNumbers();
 
   function generateRandomNumbers() {
     const temp = [];
@@ -20,7 +18,6 @@ function Main() {
       };
       temp.push(currObj);
     }
-    // console.log(temp);
     return temp;
   }
 
@@ -28,12 +25,7 @@ function Main() {
     dieInfo.every((dice) => dice.isFixed) &&
     dieInfo.every((dice) => dice.value === dieInfo[0].value);
 
-  // if (checkWin) {
-  //   console.log("Won!! \n New Game ?");
-  // }
-
   function rollDie(event) {
-    console.log(event.target.innerText);
     const currText = event.target.innerText;
     if (currText === "New Game!!") {
       setDieInfo(generateRandomNumbers());
@@ -60,11 +52,6 @@ function Main() {
       )
     );
   }
-
-  // function startNewGame() {
-  //   console.log("new game started");
-  //   setDieInfo(generateRandomNumbers());
-  // }
 
   const dieElement = dieInfo.map((diceInfo) => (
     <Die

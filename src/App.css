@@ -8,7 +8,6 @@
   height: 15vh;
   font-family: system-ui, "Segoe UI", "Roboto", "Open Sans", "Helvetica Neue",
     sans-serif;
-  /* border: 2px solid red; */
   text-align: center;
   display: flex;
   align-items: center;
@@ -19,7 +18,6 @@
 
 .gamesection {
   height: 80vh;
-  /* border: 6px solid green; */
   display: flex;
   flex-direction: column;
   justify-content: center;
