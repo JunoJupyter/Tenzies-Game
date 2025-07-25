@@ -52,6 +52,11 @@
 
 .rolldie-btn {
   width: 15%;
+  min-width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 4%;
   height: 12%;
   font-size: 2.5vw;
   border-radius: 8px;
